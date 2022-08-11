@@ -18,6 +18,7 @@ const fileUpload = require('express-fileupload');
 const { Readable } = require("stream");
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.use(express.static(path.join(__dirname, 'public')));
+const port = process.env.PORT || 3000;
 app.use(fileUpload());
 
 
@@ -65,4 +66,4 @@ app.get('/success', (req, res) => {
 });
 
 
-app.listen(3000, () => { console.log("Server started at 3000")});
+app.listen(port, () => { console.log(`Server running on http://localhost:${port}/`)});
