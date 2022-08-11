@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        File Type Validation while
+        Uploading it using JavaScript
+    </title>
+
+    <style>
+        body {
+            background-color: #cbffcd;
+            font-family: sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        span {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: red;
+        }
+
+        .formm {
+            width: 50%;
+            margin: 0px auto;
+        }
+
+        .input1 {
+            width: 306px;
+            padding: 25px;
+
+        }
+
+        #file-upload-button {
+            width: 306px;
+            height: 30px;
+            background-color: black;
+            color: white;
+        }
+
+        .input2 {
+            /* width: 100px;
+            height: 30px;
+            background-color: black;
+            color: white; */
+
+        }
+    </style>
+
+
+    </script>
+</head>
+
+<body style="align-items: center;">
+    <div style="display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;">
+        <img src="https://legible-ed-tech-services.in/assets/images/Logo.png" alt="" srcset="" style="width: 250px">
+        <h1>
+            Legible Ed-tech Services
+        </h1>
+    </div>
+
+
+    <h2>
+        Instructions
+    </h2>
+    <h4>Please add your name in solution document</h4>
+    <h4>File name should be in the folloing format: <span>"Yourname_subject_solution"</span></h4>
+    <h3>
+        Please upload your files here
+    </h3>
+    <!-- File input field -->
+    <div class="formm">
+        <form action="/single" method="post" enctype="multipart/form-data">
+            <input class="input1" type="file" name="fileIn" id="file" onchange="fileValidation()" required />
+            <input class="input2" type="submit" value="upload" id="upload-button">
+        </form>
+    </div>
+    <!-- Image preview -->
+    <div id="imagePreview"></div>
+
+</body>
+
+</html>
