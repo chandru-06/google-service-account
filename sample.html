@@ -39,10 +39,13 @@
         .formm {
             width: 50%;
             margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
 
         .input1 {
-            width: 306px;
+            width: 190px;
             padding: 25px;
 
         }
@@ -88,7 +91,7 @@
         Please upload your files here
     </h3>
     <!-- File input field -->
-    <div class="formm">
+    <div class="formm" >
         <form action="/single" method="post" enctype="multipart/form-data">
             <input class="input1" type="file" name="fileIn" id="file" onchange="fileValidation()" required />
             <input class="input2" type="submit" value="upload" id="upload-button">
